@@ -1,0 +1,72 @@
+.- http://localhost:5000/execute_aws/show
+
+**************************************
+
+.- http://localhost:5000/execute_ibm/show
+
+**************************************
+
+.- http://localhost:5000/execute_ibm
+
+{
+"tipo_ejecucion":"ejecucion",
+"tipo": ["QPU"],
+"shots": 10,
+"qbits": 5,
+"numero_buscado_recursos": 2,
+"circuito_api": "https://algassert.com/quirk#circuit={%22cols%22:[[%22H%22],[1,%22X%22,%22X%22],[%22X%22,%22%E2%80%A2%22],[%22X%22,1,%22%E2%80%A2%22],[%22H%22],[%22Measure%22,%22Measure%22,%22Measure%22]]}"
+}
+
+**************************************
+
+.- http://localhost:5000/execute_ibm
+
+{
+"tipo_ejecucion":"ejecucion",
+"maquinas_ibm": ["ibmq_lima", "simulator_extended_stabilizer", "ibmq_manila"],
+"shots_maquinas_ibm": [10,10,10],
+"circuito_api": "https://algassert.com/quirk#circuit={%22cols%22:[[%22H%22,%22H%22,%22H%22,%22H%22],[%22X%22],[%22X%22,%22X%22,%22X%22,%22X%22],[1,%22%E2%80%A2%22,%22X%22],[1,%22X%22,%22%E2%80%A2%22],[1,%22%E2%80%A2%22,%22X%22],[1,1,%22%E2%80%A2%22,%22X%22],[1,1,%22X%22,%22%E2%80%A2%22],[1,1,%22%E2%80%A2%22,%22X%22],[%22%E2%80%A2%22,1,1,%22X%22],[%22X%22,1,1,%22%E2%80%A2%22],[%22%E2%80%A2%22,1,1,%22X%22],[%22Measure%22,%22Measure%22,%22Measure%22,%22Measure%22]]}"
+}
+
+**************************************
+
+.- http://localhost:5000/execute_aws_ibm
+
+{
+"tipo_ejecucion":"probabilidad",
+"tipo": ["QPU"],
+"shots": 100,
+"qbits": 5,
+"numero_buscado_recursos_aws": 1,
+"numero_buscado_recursos_ibm": 1,
+"circuito_api": "https://algassert.com/quirk#circuit={%22cols%22:[[%22H%22],[1,%22X%22,%22X%22],[%22X%22,%22%E2%80%A2%22],[%22X%22,1,%22%E2%80%A2%22],[%22H%22],[%22Measure%22,%22Measure%22,%22Measure%22]]}",
+"bucket_s3": "blanacer-tsp"
+}
+
+**************************************
+
+.- http://localhost:5000/execute_aws
+{
+"tipo_ejecucion":"ejecucion",
+"tipo": ["SIMULATOR"],
+"shots": 100,
+"qbits": 5,
+"numero_buscado_recursos": 1,
+"circuito_api": "https://algassert.com/quirk#circuit={%22cols%22:[[%22H%22,%22H%22,%22H%22,%22H%22],[%22X%22],[%22X%22,%22X%22,%22X%22,%22X%22],[1,%22%E2%80%A2%22,%22X%22],[1,%22X%22,%22%E2%80%A2%22],[1,%22%E2%80%A2%22,%22X%22],[1,1,%22%E2%80%A2%22,%22X%22],[1,1,%22X%22,%22%E2%80%A2%22],[1,1,%22%E2%80%A2%22,%22X%22],[%22%E2%80%A2%22,1,1,%22X%22],[%22X%22,1,1,%22%E2%80%A2%22],[%22%E2%80%A2%22,1,1,%22X%22],[%22Measure%22,%22Measure%22,%22Measure%22,%22Measure%22]]}",
+"bucket_s3": "balancer-shor"
+}
+
+**************************************
+
+**************************************
+
+.- http://localhost:5000/execute_aws
+{
+"tipo_ejecucion":"ejecucion",
+"tipo": ["SIMULATOR"],
+"shots": 100,
+"qbits": 5,
+"numero_buscado_recursos": 1,
+"circuito_api": "https://algassert.com/quirk#circuit={%22cols%22:[[%22H%22,%22H%22],[1,%22X%22],[1,%22H%22],[%22%E2%80%A2%22,%22X%22],[1,%22H%22],[1,%22X%22],[1,%22H%22],[1,%22Measure%22]]}",
+"bucket_s3": "balancer-grover"
+}

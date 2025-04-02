@@ -1,0 +1,6 @@
+flask
+flask_cors
+amazon-braket-sdk
+qiskit_ibm_provider
+qiskit_ibm_runtime
+boto3
