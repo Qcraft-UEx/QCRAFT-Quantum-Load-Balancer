@@ -68,4 +68,4 @@ See the configuration of the experiments in the "ExperimentsConfiguration" file 
 
 
 ## License
-QCRAFT Scheduler is licensed under the [MIT License](https://github.com/Qcraft-UEx/QCRAFT/blob/main/LICENSE)
+QCRAFT Quantum Load Balancer is licensed under the [MIT License](https://github.com/Qcraft-UEx/QCRAFT/blob/main/LICENSE)
